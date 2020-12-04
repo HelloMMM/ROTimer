@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		025D6A54257784C800AAADDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025D6A53257784C800AAADDA /* AppDelegate.swift */; };
+		025D6A58257784C800AAADDA /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025D6A57257784C800AAADDA /* TabbarVC.swift */; };
+		025D6A5B257784C800AAADDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 025D6A59257784C800AAADDA /* Main.storyboard */; };
+		025D6A5D257784C900AAADDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 025D6A5C257784C900AAADDA /* Assets.xcassets */; };
+		025D6A60257784C900AAADDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 025D6A5E257784C900AAADDA /* LaunchScreen.storyboard */; };
+		025D6A872577863D00AAADDA /* ExampleBackgroundContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025D6A822577863D00AAADDA /* ExampleBackgroundContentView.swift */; };
+		025D6A882577863D00AAADDA /* ExampleBouncesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025D6A832577863D00AAADDA /* ExampleBouncesContentView.swift */; };
+		025D6A892577863D00AAADDA /* ExampleBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025D6A842577863D00AAADDA /* ExampleBasicContentView.swift */; };
+		025D6A8A2577863D00AAADDA /* ExampleHighlightableContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025D6A852577863D00AAADDA /* ExampleHighlightableContentView.swift */; };
+		025D6A8B2577863D00AAADDA /* ExampleIrregularityContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025D6A862577863D00AAADDA /* ExampleIrregularityContentView.swift */; };
+		025D6A9B2577892800AAADDA /* TimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025D6A9A2577892800AAADDA /* TimerVC.swift */; };
+		025D6AA3257796D300AAADDA /* TimerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025D6AA2257796D300AAADDA /* TimerCell.swift */; };
+		029D984E2578CB8E00F53A68 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D984D2578CB8E00F53A68 /* TimerModel.swift */; };
+		029D98522578E38300F53A68 /* UserDefaultsExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D98512578E38300F53A68 /* UserDefaultsExtended.swift */; };
+		029D98552578EC1200F53A68 /* ViewExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D98542578EC1200F53A68 /* ViewExtended.swift */; };
+		02C0C1F22578890700405924 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0C1F12578890700405924 /* Observable.swift */; };
+		02C0C1F8257889AE00405924 /* TimerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0C1F7257889AE00405924 /* TimerVM.swift */; };
+		D9BF7967A78ED1080E77EC70 /* Pods_ROTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A314ACA43A9EB066130A84CE /* Pods_ROTimer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		025D6A50257784C800AAADDA /* ROTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ROTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		025D6A53257784C800AAADDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		025D6A57257784C800AAADDA /* TabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
+		025D6A5A257784C800AAADDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		025D6A5C257784C900AAADDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		025D6A5F257784C900AAADDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		025D6A61257784C900AAADDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		025D6A822577863D00AAADDA /* ExampleBackgroundContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleBackgroundContentView.swift; sourceTree = "<group>"; };
+		025D6A832577863D00AAADDA /* ExampleBouncesContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleBouncesContentView.swift; sourceTree = "<group>"; };
+		025D6A842577863D00AAADDA /* ExampleBasicContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleBasicContentView.swift; sourceTree = "<group>"; };
+		025D6A852577863D00AAADDA /* ExampleHighlightableContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleHighlightableContentView.swift; sourceTree = "<group>"; };
+		025D6A862577863D00AAADDA /* ExampleIrregularityContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleIrregularityContentView.swift; sourceTree = "<group>"; };
+		025D6A9A2577892800AAADDA /* TimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVC.swift; sourceTree = "<group>"; };
+		025D6AA2257796D300AAADDA /* TimerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCell.swift; sourceTree = "<group>"; };
+		029D984D2578CB8E00F53A68 /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		029D98512578E38300F53A68 /* UserDefaultsExtended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtended.swift; sourceTree = "<group>"; };
+		029D98542578EC1200F53A68 /* ViewExtended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtended.swift; sourceTree = "<group>"; };
+		02C0C1F12578890700405924 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		02C0C1F7257889AE00405924 /* TimerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVM.swift; sourceTree = "<group>"; };
+		A314ACA43A9EB066130A84CE /* Pods_ROTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ROTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92B4779DD26E1205CD8B6E3 /* Pods-ROTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROTimer.release.xcconfig"; path = "Target Support Files/Pods-ROTimer/Pods-ROTimer.release.xcconfig"; sourceTree = "<group>"; };
+		B8E112DCE50AED48CAF48ED3 /* Pods-ROTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROTimer.debug.xcconfig"; path = "Target Support Files/Pods-ROTimer/Pods-ROTimer.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		025D6A4D257784C800AAADDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9BF7967A78ED1080E77EC70 /* Pods_ROTimer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		025D6A47257784C800AAADDA = {
+			isa = PBXGroup;
+			children = (
+				025D6A52257784C800AAADDA /* ROTimer */,
+				025D6A51257784C800AAADDA /* Products */,
+				1D5C0FDC18F216BE1148BEF3 /* Pods */,
+				722F4C3300CF0BB44E2960F7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		025D6A51257784C800AAADDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				025D6A50257784C800AAADDA /* ROTimer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		025D6A52257784C800AAADDA /* ROTimer */ = {
+			isa = PBXGroup;
+			children = (
+				025D6A53257784C800AAADDA /* AppDelegate.swift */,
+				02C0C1F42578894800405924 /* View */,
+				02C0C1F52578895A00405924 /* View Model */,
+				02C0C1F62578898300405924 /* Model */,
+				025D6A59257784C800AAADDA /* Main.storyboard */,
+				025D6A5C257784C900AAADDA /* Assets.xcassets */,
+				025D6A5E257784C900AAADDA /* LaunchScreen.storyboard */,
+				025D6A812577863D00AAADDA /* TabbarStyle */,
+				02C0C1F0257888E400405924 /* Extended */,
+				025D6A61257784C900AAADDA /* Info.plist */,
+			);
+			path = ROTimer;
+			sourceTree = "<group>";
+		};
+		025D6A812577863D00AAADDA /* TabbarStyle */ = {
+			isa = PBXGroup;
+			children = (
+				025D6A822577863D00AAADDA /* ExampleBackgroundContentView.swift */,
+				025D6A832577863D00AAADDA /* ExampleBouncesContentView.swift */,
+				025D6A842577863D00AAADDA /* ExampleBasicContentView.swift */,
+				025D6A852577863D00AAADDA /* ExampleHighlightableContentView.swift */,
+				025D6A862577863D00AAADDA /* ExampleIrregularityContentView.swift */,
+			);
+			path = TabbarStyle;
+			sourceTree = "<group>";
+		};
+		02C0C1F0257888E400405924 /* Extended */ = {
+			isa = PBXGroup;
+			children = (
+				02C0C1F12578890700405924 /* Observable.swift */,
+				029D98512578E38300F53A68 /* UserDefaultsExtended.swift */,
+				029D98542578EC1200F53A68 /* ViewExtended.swift */,
+			);
+			path = Extended;
+			sourceTree = "<group>";
+		};
+		02C0C1F42578894800405924 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				025D6A57257784C800AAADDA /* TabbarVC.swift */,
+				025D6A9A2577892800AAADDA /* TimerVC.swift */,
+				025D6AA2257796D300AAADDA /* TimerCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		02C0C1F52578895A00405924 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				02C0C1F7257889AE00405924 /* TimerVM.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		02C0C1F62578898300405924 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				029D984D2578CB8E00F53A68 /* TimerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1D5C0FDC18F216BE1148BEF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8E112DCE50AED48CAF48ED3 /* Pods-ROTimer.debug.xcconfig */,
+				A92B4779DD26E1205CD8B6E3 /* Pods-ROTimer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		722F4C3300CF0BB44E2960F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A314ACA43A9EB066130A84CE /* Pods_ROTimer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		025D6A4F257784C800AAADDA /* ROTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 025D6A64257784C900AAADDA /* Build configuration list for PBXNativeTarget "ROTimer" */;
+			buildPhases = (
+				CF0423E88B8E00323C8C0982 /* [CP] Check Pods Manifest.lock */,
+				A646054CEA2F7A7480BF49E7 /* [CP] Prepare Artifacts */,
+				025D6A4C257784C800AAADDA /* Sources */,
+				025D6A4D257784C800AAADDA /* Frameworks */,
+				025D6A4E257784C800AAADDA /* Resources */,
+				DFFA815DC6AF62CDF9941301 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ROTimer;
+			productName = ROTimer;
+			productReference = 025D6A50257784C800AAADDA /* ROTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		025D6A48257784C800AAADDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					025D6A4F257784C800AAADDA = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 025D6A4B257784C800AAADDA /* Build configuration list for PBXProject "ROTimer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 025D6A47257784C800AAADDA;
+			productRefGroup = 025D6A51257784C800AAADDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				025D6A4F257784C800AAADDA /* ROTimer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		025D6A4E257784C800AAADDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025D6A60257784C900AAADDA /* LaunchScreen.storyboard in Resources */,
+				025D6A5D257784C900AAADDA /* Assets.xcassets in Resources */,
+				025D6A5B257784C800AAADDA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A646054CEA2F7A7480BF49E7 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ROTimer/Pods-ROTimer-artifacts-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ROTimer/Pods-ROTimer-artifacts-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ROTimer/Pods-ROTimer-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF0423E88B8E00323C8C0982 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ROTimer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFFA815DC6AF62CDF9941301 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ROTimer/Pods-ROTimer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ROTimer/Pods-ROTimer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ROTimer/Pods-ROTimer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		025D6A4C257784C800AAADDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025D6A58257784C800AAADDA /* TabbarVC.swift in Sources */,
+				029D984E2578CB8E00F53A68 /* TimerModel.swift in Sources */,
+				025D6A892577863D00AAADDA /* ExampleBasicContentView.swift in Sources */,
+				02C0C1F8257889AE00405924 /* TimerVM.swift in Sources */,
+				025D6A9B2577892800AAADDA /* TimerVC.swift in Sources */,
+				025D6A8A2577863D00AAADDA /* ExampleHighlightableContentView.swift in Sources */,
+				029D98522578E38300F53A68 /* UserDefaultsExtended.swift in Sources */,
+				029D98552578EC1200F53A68 /* ViewExtended.swift in Sources */,
+				025D6A54257784C800AAADDA /* AppDelegate.swift in Sources */,
+				025D6AA3257796D300AAADDA /* TimerCell.swift in Sources */,
+				02C0C1F22578890700405924 /* Observable.swift in Sources */,
+				025D6A872577863D00AAADDA /* ExampleBackgroundContentView.swift in Sources */,
+				025D6A882577863D00AAADDA /* ExampleBouncesContentView.swift in Sources */,
+				025D6A8B2577863D00AAADDA /* ExampleIrregularityContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		025D6A59257784C800AAADDA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				025D6A5A257784C800AAADDA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		025D6A5E257784C900AAADDA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				025D6A5F257784C900AAADDA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		025D6A62257784C900AAADDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		025D6A63257784C900AAADDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		025D6A65257784C900AAADDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8E112DCE50AED48CAF48ED3 /* Pods-ROTimer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 38AMPUQ98F;
+				INFOPLIST_FILE = ROTimer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uuu.HelloM.ROTimer.ROTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = RT_dev_20201204;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		025D6A66257784C900AAADDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A92B4779DD26E1205CD8B6E3 /* Pods-ROTimer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 38AMPUQ98F;
+				INFOPLIST_FILE = ROTimer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uuu.HelloM.ROTimer.ROTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = RT_dev_20201204;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		025D6A4B257784C800AAADDA /* Build configuration list for PBXProject "ROTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025D6A62257784C900AAADDA /* Debug */,
+				025D6A63257784C900AAADDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		025D6A64257784C900AAADDA /* Build configuration list for PBXNativeTarget "ROTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025D6A65257784C900AAADDA /* Debug */,
+				025D6A66257784C900AAADDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 025D6A48257784C800AAADDA /* Project object */;
+}

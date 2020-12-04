@@ -1,0 +1,6 @@
+framework module Pods_ROTimer {
+  umbrella header "Pods-ROTimer-umbrella.h"
+
+  export *
+  module * { export * }
+}
