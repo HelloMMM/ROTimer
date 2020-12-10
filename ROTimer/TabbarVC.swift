@@ -13,11 +13,12 @@ class TabbarVC: ESTabBarController {
 
     var bannerView: GADBannerView!
     var timerVC: TimerVC!
+    var moreVC: MoreVC!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addBannerViewToView()
+//        addBannerViewToView()
         setTabBar()
     }
 
@@ -49,7 +50,10 @@ class TabbarVC: ESTabBarController {
         timerVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "idTimerVC") as? TimerVC
         let timerNC = UINavigationController(rootViewController: timerVC)
         
-        viewControllers = [timerNC]
+        moreVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "idMoreVC") as? MoreVC
+        let moreNC = UINavigationController(rootViewController: moreVC)
+        
+        viewControllers = [timerNC, moreNC]
         
         setTabBarItem()
     }
@@ -57,6 +61,7 @@ class TabbarVC: ESTabBarController {
     func setTabBarItem() {
         
         let basicContentView1 = ExampleIrregularityBasicContentView()
+        let basicContentView2 = ExampleIrregularityBasicContentView()
         if #available(iOS 13.0, *) {
             let currentMode = UITraitCollection.current.userInterfaceStyle
             if currentMode == .dark {
@@ -65,15 +70,25 @@ class TabbarVC: ESTabBarController {
                 basicContentView1.highlightTextColor = .white
                 basicContentView1.iconColor = .white
                 basicContentView1.highlightIconColor = .white
+                basicContentView2.textColor = .white
+                basicContentView2.highlightTextColor = .white
+                basicContentView2.iconColor = .white
+                basicContentView2.highlightIconColor = .white
             } else {
                 
                 basicContentView1.textColor = .black
                 basicContentView1.highlightTextColor = .black
                 basicContentView1.iconColor = .black
                 basicContentView1.highlightIconColor = .black
+                basicContentView2.textColor = .black
+                basicContentView2.highlightTextColor = .black
+                basicContentView2.iconColor = .black
+                basicContentView2.highlightIconColor = .black
             }
         }
+        
         timerVC.tabBarItem = ESTabBarItem(basicContentView1, title: "計時器", image: UIImage(named: "timer"), selectedImage: UIImage(named: "timer"))
+        moreVC.tabBarItem = ESTabBarItem(basicContentView2, title: "更多", image: UIImage(named: "more"), selectedImage: UIImage(named: "more"))
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
