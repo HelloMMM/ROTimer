@@ -57,7 +57,7 @@ class TimerCell: UITableViewCell {
         }
         
         if indexPath.section == 0 {
-            second = 10800
+            second = 305
         } else {
             second = 7200
         }
@@ -84,6 +84,7 @@ class TimerCell: UITableViewCell {
     
     func stopTimer() {
         
+        second = 0
         timerLab.text = "--:--:--"
         timerLab.textColor = .none
         if timer != nil {

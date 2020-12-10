@@ -11,6 +11,7 @@ class TimerVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     let timerVM = TimerVM()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,22 +27,8 @@ class TimerVC: UIViewController {
 }
 
 extension TimerVC: UITableViewDelegate, UITableViewDataSource, TimerCellDelegate {
-    
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        
-//        let myLabel = UILabel()
-//        myLabel.frame = CGRect(x: 20, y: 8, width: 320, height: 20)
-//        myLabel.font = UIFont.boldSystemFont(ofSize: 18)
-//        myLabel.text = self.tableView(tableView, titleForHeaderInSection: section)
-//        
-//        let headerView = UIView()
-//        headerView.addSubview(myLabel)
-//        
-//        return headerView
-//    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
         
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
     
@@ -84,14 +71,21 @@ extension TimerVC: UITableViewDelegate, UITableViewDataSource, TimerCellDelegate
         
         if maturityTime != 0 {
             let limitDescriptionTime = (Int(round(maturityTime - nowTime)))
+            if limitDescriptionTime <= 300 {
+                cell.timerLab.textColor = .systemRed
+            } else {
+                cell.timerLab.textColor = .none
+            }
             cell.timerLab.text = transToHourMinSec(time: limitDescriptionTime)
             cell.second = limitDescriptionTime
             cell.initTimer()
         } else {
             cell.second = 0
             cell.timerLab.text = "--:--:--"
+            cell.timerLab.textColor = .none
             if cell.timer != nil {
                 cell.timer.invalidate()
+                cell.timer =  nil
             }
         }
         
@@ -114,6 +108,7 @@ extension TimerVC: UITableViewDelegate, UITableViewDataSource, TimerCellDelegate
     
     func startTimer(indexPath: IndexPath, time: TimeInterval) {
         
+        timerVM.setUserNotifications(indexPath: indexPath, time: time)
         if indexPath.section == 0 {
             timerVM.mvpModel[indexPath.row].timer = time
         } else {
@@ -124,6 +119,8 @@ extension TimerVC: UITableViewDelegate, UITableViewDataSource, TimerCellDelegate
     }
     
     func stopTimer(indexPath: IndexPath) {
+        
+        timerVM.removeUserNotifications(indexPath: indexPath)
         
         if indexPath.section == 0 {
             timerVM.mvpModel[indexPath.row].timer = 0
