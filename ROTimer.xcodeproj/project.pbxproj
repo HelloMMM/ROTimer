@@ -22,6 +22,7 @@
 		029D984E2578CB8E00F53A68 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D984D2578CB8E00F53A68 /* TimerModel.swift */; };
 		029D98522578E38300F53A68 /* UserDefaultsExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D98512578E38300F53A68 /* UserDefaultsExtended.swift */; };
 		029D98552578EC1200F53A68 /* ViewExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D98542578EC1200F53A68 /* ViewExtended.swift */; };
+		02A2F7F72581F016008327DE /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A2F7F62581F016008327DE /* MoreVC.swift */; };
 		02C0C1F22578890700405924 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0C1F12578890700405924 /* Observable.swift */; };
 		02C0C1F8257889AE00405924 /* TimerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0C1F7257889AE00405924 /* TimerVM.swift */; };
 		D9BF7967A78ED1080E77EC70 /* Pods_ROTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A314ACA43A9EB066130A84CE /* Pods_ROTimer.framework */; };
@@ -45,6 +46,7 @@
 		029D984D2578CB8E00F53A68 /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
 		029D98512578E38300F53A68 /* UserDefaultsExtended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtended.swift; sourceTree = "<group>"; };
 		029D98542578EC1200F53A68 /* ViewExtended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtended.swift; sourceTree = "<group>"; };
+		02A2F7F62581F016008327DE /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
 		02C0C1F12578890700405924 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		02C0C1F7257889AE00405924 /* TimerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVM.swift; sourceTree = "<group>"; };
 		A314ACA43A9EB066130A84CE /* Pods_ROTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ROTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,9 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				025D6A53257784C800AAADDA /* AppDelegate.swift */,
-				02C0C1F42578894800405924 /* View */,
-				02C0C1F52578895A00405924 /* View Model */,
-				02C0C1F62578898300405924 /* Model */,
+				025D6A57257784C800AAADDA /* TabbarVC.swift */,
+				02A2F7F32581EFE4008327DE /* Timer */,
+				02A2F7F42581EFF2008327DE /* More */,
 				025D6A59257784C800AAADDA /* Main.storyboard */,
 				025D6A5C257784C900AAADDA /* Assets.xcassets */,
 				025D6A5E257784C900AAADDA /* LaunchScreen.storyboard */,
@@ -111,6 +113,32 @@
 			path = TabbarStyle;
 			sourceTree = "<group>";
 		};
+		02A2F7F32581EFE4008327DE /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				02C0C1F42578894800405924 /* View */,
+				02C0C1F52578895A00405924 /* View Model */,
+				02C0C1F62578898300405924 /* Model */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		02A2F7F42581EFF2008327DE /* More */ = {
+			isa = PBXGroup;
+			children = (
+				02A2F7F52581F004008327DE /* View */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		02A2F7F52581F004008327DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02A2F7F62581F016008327DE /* MoreVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		02C0C1F0257888E400405924 /* Extended */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,7 +152,6 @@
 		02C0C1F42578894800405924 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				025D6A57257784C800AAADDA /* TabbarVC.swift */,
 				025D6A9A2577892800AAADDA /* TimerVC.swift */,
 				025D6AA2257796D300AAADDA /* TimerCell.swift */,
 			);
@@ -300,6 +327,7 @@
 				029D984E2578CB8E00F53A68 /* TimerModel.swift in Sources */,
 				025D6A892577863D00AAADDA /* ExampleBasicContentView.swift in Sources */,
 				02C0C1F8257889AE00405924 /* TimerVM.swift in Sources */,
+				02A2F7F72581F016008327DE /* MoreVC.swift in Sources */,
 				025D6A9B2577892800AAADDA /* TimerVC.swift in Sources */,
 				025D6A8A2577863D00AAADDA /* ExampleHighlightableContentView.swift in Sources */,
 				029D98522578E38300F53A68 /* UserDefaultsExtended.swift in Sources */,
@@ -457,7 +485,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development: CHIA-WEN HUANG (7NVT2868SF)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 38AMPUQ98F;
 				INFOPLIST_FILE = ROTimer/Info.plist;
@@ -480,7 +508,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development: CHIA-WEN HUANG (7NVT2868SF)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 38AMPUQ98F;
 				INFOPLIST_FILE = ROTimer/Info.plist;

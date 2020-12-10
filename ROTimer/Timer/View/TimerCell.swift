@@ -85,6 +85,7 @@ class TimerCell: UITableViewCell {
     func stopTimer() {
         
         timerLab.text = "--:--:--"
+        timerLab.textColor = .none
         if timer != nil {
             timer.invalidate()
             timer = nil
@@ -103,7 +104,11 @@ class TimerCell: UITableViewCell {
         
         second -= 1
         
-        
+        if second <= 300 {
+            timerLab.textColor = .systemRed
+        } else {
+            timerLab.textColor = .none
+        }
         timerLab.text = transToHourMinSec(time: second)
     }
     
