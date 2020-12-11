@@ -32,6 +32,13 @@ class TimerVM {
             miniModel = miniList.map({ TimerModel(monsterName: $0 , timer: 0) })
         }
         
+        NotificationCenter.default.addObserver(self, selector: #selector(updateUI), name: Notification.Name("UpdateUI"), object: nil)
+        
+        person.value = true
+    }
+    
+    @objc func updateUI() {
+        
         person.value = true
     }
     
@@ -69,7 +76,7 @@ class TimerVM {
         secondFormatter.dateFormat = "ss"
         
         let originDate = time - Date().timeIntervalSince1970
-        let date = Date(timeIntervalSinceNow: originDate-300)
+        let date = Date(timeIntervalSinceNow: originDate)
         var components = DateComponents()
         components.year = Int(yearFormatter.string(from: date))
         components.month = Int(monthFormatter.string(from: date))

@@ -23,6 +23,28 @@ class TimerVC: UIViewController {
                 self?.tableView.reloadData()
             }
         }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(showAlert), name: Notification.Name("ShowAlert"), object: nil)
+    }
+    
+    @objc func showAlert() {
+        
+        let alert = UIAlertController(title: "注意", message: "請開啟您的通知權限,\n否則無法向您提醒!", preferredStyle: .alert)
+        let cancel = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        let set = UIAlertAction(title: "設定", style: .default) { (alert) in
+            
+            guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
+                return
+            }
+            
+            UIApplication.shared.open(settingsUrl, options: [:], completionHandler: nil)
+        }
+
+        alert.addAction(cancel)
+        alert.addAction(set)
+        DispatchQueue.main.async {
+            self.present(alert, animated: true, completion: nil)
+        }
     }
 }
 
@@ -76,9 +98,20 @@ extension TimerVC: UITableViewDelegate, UITableViewDataSource, TimerCellDelegate
             } else {
                 cell.timerLab.textColor = .none
             }
-            cell.timerLab.text = transToHourMinSec(time: limitDescriptionTime)
-            cell.second = limitDescriptionTime
-            cell.initTimer()
+            if limitDescriptionTime > 0 {
+                cell.timerLab.text = transToHourMinSec(time: limitDescriptionTime)
+                cell.second = limitDescriptionTime
+                cell.initTimer()
+            } else {
+                cell.second = 0
+                cell.timerLab.text = "--:--:--"
+                cell.timerLab.textColor = .none
+                if cell.timer != nil {
+                    cell.timer.invalidate()
+                    cell.timer =  nil
+                }
+            }
+            
         } else {
             cell.second = 0
             cell.timerLab.text = "--:--:--"

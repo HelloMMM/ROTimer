@@ -27,6 +27,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             } else {
                 print("不允許")
                 isNotification = false
+                
+                if UserDefaults.standard.object(forKey: "isFirst") == nil {
+                    
+                    NotificationCenter.default.post(name: Notification.Name("ShowAlert"), object: nil)
+                }
+                
+                UserDefaults.standard.setValue("true", forKey: "isFirst")
             }
         })
         
@@ -40,6 +47,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         return true
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        
+        NotificationCenter.default.post(name: Notification.Name("UpdateUI"), object: nil)
     }
 }
 

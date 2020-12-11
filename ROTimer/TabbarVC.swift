@@ -18,7 +18,7 @@ class TabbarVC: ESTabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        addBannerViewToView()
+        addBannerViewToView()
         setTabBar()
     }
 
