@@ -8,6 +8,8 @@
 import UIKit
 import ESTabBarController_swift
 import GoogleMobileAds
+import AppTrackingTransparency
+import AdSupport
 
 class TabbarVC: ESTabBarController {
 
@@ -18,8 +20,15 @@ class TabbarVC: ESTabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addBannerViewToView()
         setTabBar()
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
+                
+                self.addBannerViewToView()
+            })
+        } else {
+            // Fallback on earlier versions
+        }
     }
 
     func addBannerViewToView() {

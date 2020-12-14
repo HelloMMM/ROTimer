@@ -57,7 +57,7 @@ class TimerCell: UITableViewCell {
         }
         
         if indexPath.section == 0 {
-            second = 5
+            second = 10800
         } else {
             second = 7200
         }
