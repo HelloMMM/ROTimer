@@ -24,7 +24,9 @@ class TabbarVC: ESTabBarController {
         if #available(iOS 14, *) {
             ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
                 
-                self.addBannerViewToView()
+                DispatchQueue.main.async {
+                    self.addBannerViewToView()
+                }
             })
         } else {
             // Fallback on earlier versions
@@ -38,7 +40,7 @@ class TabbarVC: ESTabBarController {
         #if DEBUG
         bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
         #else
-        bannerView.adUnitID = "ca-app-pub-1223027370530841/2157805612"
+        bannerView.adUnitID = "cca-app-pub-1223027370530841/2157805612"
         #endif
 
         bannerView.delegate = self
